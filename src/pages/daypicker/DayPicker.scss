@@ -1,0 +1,50 @@
+.container {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 50px auto 0;
+}
+
+.containerDateInput {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dateInput {
+  display: flex;
+}
+
+.containerListModePicker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listMode {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listItem {
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+}
+
+.listItem .active {
+  opacity: 1;
+  color: blue;
+}
+
+.disableHead {
+  .rdp-head {
+    display: none;
+  }
+}

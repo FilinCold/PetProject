@@ -6,15 +6,19 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config tools/webpack/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config tools/webpack/webpack.config.prod.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --config tools/webpack/webpack.config.prod.js",
     "serve": "cross-env NODE_ENV=production webpack --config tools/webpack/webpack.config.prod.js && cross-env serve dist/",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src/"
   },
   "devDependencies": {
     "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.8",
+    "@types/compose-function": "^0.0.32",
     "@types/node": "^18.11.5",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
+    "@types/react-router": "^5.1.20",
+    "@types/react-router-dom": "^5.3.3",
     "@types/webpack-env": "^1.18.0",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
@@ -42,7 +46,12 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "classnames": "^2.3.2",
+    "compose-function": "^3.0.3",
+    "date-fns": "^2.30.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-day-picker": "^8.9.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
   }
 }

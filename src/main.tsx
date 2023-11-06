@@ -1,12 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Application from './components/Application';
+import Application from './app/Application';
 
-// Say something
-console.log('[ERWT] : Renderer execution started');
+const app = Application;
 
-// Application to Render
-const app = <Application />;
-
-// Render application in DOM
 createRoot(document.getElementById('app')).render(app);

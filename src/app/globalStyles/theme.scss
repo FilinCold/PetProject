@@ -1,0 +1,12 @@
+:root {
+  --black-theme: #181a2a;
+  --light-theme: #fff;
+}
+
+.app-theme-dark {
+  --theme-main: var(--black-theme);
+}
+
+.app-theme-light {
+  --theme-main: var(--light-theme);
+}
